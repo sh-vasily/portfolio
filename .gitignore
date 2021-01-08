@@ -1,0 +1,5 @@
+Portfolio/.idea/**
+Portfolio/.vs/**
+**/bin/**
+**/obj/**
+
