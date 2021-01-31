@@ -22,12 +22,9 @@ jobs:
       run: npm install
     - name: Deploy page
       run: |
-        git config --global user.name $user_name
-        git config --global user.email $user_email
-        git remote set-url origin https://${github_token}@github.com/${repository}
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email'github-actions[bot]@users.noreply.github.com'
+        git remote set-url origin https://${github_token}@github.com/portfolio
         npm run deploy
       env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
         github_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        repository: ${{ github.repository }}
