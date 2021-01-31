@@ -1,4 +1,4 @@
-import React, { Component, Props, ReactNode } from 'react';
+import React, { Component, ReactNode } from 'react';
 import Toast from 'react-bootstrap/Toast';
 import Button from 'react-bootstrap/Button';
 
