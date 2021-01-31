@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+defaults:
+  run:
+    working-directory: ./portfolio-ui
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -16,9 +19,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
-      run: |
-        cd ./portfolio-ui
-        npm install
+      run: npm install
     - name: Build page
       run: npm run build
     - name: Deploy to gh-pages
