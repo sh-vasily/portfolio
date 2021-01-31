@@ -15,10 +15,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: Move to frontend dir
-      run: cd ./portfolio-ui
     - name: Install Packages
-      run: npm install
+      run: |
+        cd ./portfolio-ui
+        npm install
     - name: Build page
       run: npm run build
     - name: Deploy to gh-pages
