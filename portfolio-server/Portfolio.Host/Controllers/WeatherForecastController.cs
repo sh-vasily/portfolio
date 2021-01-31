@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Portfolio.Controllers
+namespace Portfolio.Host.Controllers
 {
     [ApiController]
     [Route("[controller]")]

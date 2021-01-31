@@ -1,6 +1,6 @@
 using System;
 
-namespace Portfolio
+namespace Portfolio.Host
 {
     public class WeatherForecast
     {
